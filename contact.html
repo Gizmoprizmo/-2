@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио — Контакты</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Моё портфолио</a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link" href="projects.html">Проекты</a>
+        <a class="nav-link active" href="contact.html">Контакты</a>
+      </nav>
+
+      <button class="btn" id="themeToggle" type="button" aria-label="Переключить тему">
+        🌙 Тема
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Контакты</h1>
+      <p class="lead">Если хочешь связаться — заполни форму или используй ссылки ниже.</p>
+
+      <form class="form" id="contactForm">
+        <label>
+          Имя
+          <input type="text" name="name" required placeholder="Ваше имя" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="example@mail.com" />
+        </label>
+
+        <label>
+          Сообщение
+          <textarea name="message" required rows="5" placeholder="Ваше сообщение..."></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Отправить</button>
+        <p class="hint" id="formStatus" aria-live="polite"></p>
+      </form>
+
+      <hr class="sep" />
+
+      <h2>Контактная информация</h2>
+      <ul class="list">
+        <li>Email: <a href="mailto:daniyal@email.com">daniyal@email.com</a></li>
+        <li>Telegram: <a href="https://t.me/Talvisi" target="_blank" rel="noreferrer">@Talvisi</a></li>
+        <li>Instagram: <a href="https://instagram.com/Talvi" target="_blank" rel="noreferrer">@Talvi</a></li>
+        <li>GitHub: <a href="https://github.com/Gizmo" target="_blank" rel="noreferrer">github.com/Gizmo</a></li>
+      </ul>
+
+      <p class="hint">Замените ссылки на свои реальные.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span></span>
+      <span class="muted">Ник: <strong>Daniyal</strong></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио — Главная</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Моё портфолио</a>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link" href="projects.html">Проекты</a>
+        <a class="nav-link" href="contact.html">Контакты</a>
+      </nav>
+
+      <button class="btn" id="themeToggle" type="button" aria-label="Переключить тему">
+        🌙 Тема
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div class="hero-text">
+        <h1>Привет! Я Daniyal</h1>
+        <p class="lead">
+          Добро пожаловать в моё портфолио. Здесь вы найдёте информацию обо мне, моих навыках и проектах.
+        </p>
+        <p>
+          Я интересуюсь веб-разработкой и люблю делать простые, понятные и красивые интерфейсы.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">Посмотреть проекты</a>
+          <a class="btn" href="contact.html">Связаться</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="1000027069.jpg" alt="Фото разработчика" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Кратко обо мне</h2>
+      <ul class="list">
+        <li>Веб-разработка: HTML, CSS, JavaScript</li>
+        <li>Учусь делать адаптивные сайты</li>
+        <li>Собираю проекты и улучшаю навыки</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span></span>
+      <span class="muted">Ник: <strong>Daniyal</strong></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

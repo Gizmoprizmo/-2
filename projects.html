@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио — Проекты</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Моё портфолио</a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link active" href="projects.html">Проекты</a>
+        <a class="nav-link" href="contact.html">Контакты</a>
+      </nav>
+
+      <button class="btn" id="themeToggle" type="button" aria-label="Переключить тему">
+        🌙 Тема
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Мои проекты</h1>
+      <p class="lead">Здесь собраны мои учебные и личные работы.</p>
+
+      <div class="grid">
+        <article class="project">
+          <img src="https://via.placeholder.com/600x320.png?text=Project+Screenshot" alt="Скриншот проекта" />
+          <div class="project-body">
+            <h2>Портфолио-сайт</h2>
+            <p>Личный сайт-портфолио на HTML/CSS/JS с тёмной темой и формой контактов.</p>
+            <p class="tags">Технологии: HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a class="btn primary" href="#" target="_blank" rel="noreferrer">Открыть проект</a>
+              <a class="btn" href="https://github.com/Gizmo" target="_blank" rel="noreferrer">Репозиторий</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/600x320.png?text=Future+Project" alt="Будущий проект" />
+          <div class="project-body">
+            <h2>Мини-планировщик задач</h2>
+            <p>Простое веб-приложение для списка задач с сохранением в LocalStorage.</p>
+            <p class="tags">Технологии: JavaScript, LocalStorage</p>
+            <div class="project-links">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">План</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Репозиторий</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Будущие проекты</h2>
+      <ul class="list">
+        <li>Лендинг для бизнеса с формой заявки и адаптивной версткой</li>
+        <li>Небольшой интернет-каталог товаров с фильтрами</li>
+        <li>Проект на Flask/Node.js для практики backend</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span></span>
+      <span class="muted">Ник: <strong>Daniyal</strong></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
